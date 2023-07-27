@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="assets/signalr/signalr.js"></script>
+    <script src="assets/main.js"></script>
+
+
+   
+    <title>WebChat</title>
+</head>
+
+<body>
+    <div id="zenFabButton" class="zen-fab-button" onclick="openOrClose()">
+        <i class="fa fa-commenting-o" style="color: white;font-size: 24px; " aria-hidden="true"></i>
+    </div>
+    <div id="zenChatContent" class="zen-chat-content">
+        <div class="grid-container">
+            <div class="grid-item"></div>
+            <div class="grid-item">ZenWebChat</div>
+            <div class="grid-item zen-close-button" onclick="openOrClose()">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div id="zenChatBasePer" class="zen-chat-base-per">
+            <div id="zenChatBasePer0">
+                <form>
+                    <div class="form-group">
+                        <label for="mail">İsim Soyisim</label>
+                        <input type="text" class="form-control text-form-box" id="name" placeholder="Örn: Ahmet Çimen">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">E-Posta</label>
+                        <input type="email" class="form-control text-form-box" id="mail"
+                            placeholder="Örn: mail@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Telefon</label>
+                        <input type="tel" class="form-control text-form-box" id="tel" placeholder="542*******">
+                    </div>
+                    <div class="grid-message">
+                        <div class="form-group">
+                            <label for="message" style="font-size: 14px;">Mesaj</label>
+                            <textarea class="form-control" placeholder="Lütfen özet bir mesaj belirtin" id="message"
+                                rows="2"></textarea>
+                        </div>
+                        <button type="button" class="btn button-form-box btn-start" onclick="startChat()">Başla</button>
+                    </div>
+
+                </form>
+            </div>
+            <div id="zenChatBasePer1">
+                <div id="userIsNull" style="text-align: center;">
+                    <i class="fa fa-headphones" style="font-size: 24px;" aria-hidden="true"></i>
+                    <br>
+                    <span>Müşteri Temsilcisinin Sohbete Bağlanması Bekleniyor...</span>
+                </div>
+                <br>
+                <div id="zenChatBasePer1Content" class="message-content">
+
+                </div>
+                <div class="grid-message stick-message-box">
+                    <div class="form-group">
+                        <label for="message" style="font-size: 14px;">Yanıtlayın</label>
+                        <textarea class="form-control" placeholder="Birşeyler Yazın.." id="messageRe"
+                            rows="2"></textarea>
+                    </div>
+                    <button type="button" class="btn button-form-box btn-start" onclick="sendMessage()">
+                        <i class="fa fa-check" style="font-size: 16px;" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="zen-copy">© Zensoft Yazılım A.Ş.</div>
+    </div>
+</body>
+
+</html>

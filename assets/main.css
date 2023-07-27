@@ -1,0 +1,107 @@
+body {
+    font-family: "Lexend Deca", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.zen-copy {
+    font-size: 10px;
+    color: cadetblue;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.zen-chat-content {
+    position: absolute;
+    bottom: 64px;
+    right: 64px;
+    height: 58%;
+    width: 484px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 4%;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+.zen-chat-base-per {
+    padding: 24px;
+    overflow-y: auto;
+    height: 84%;
+}
+
+.text-form-box {
+    height: 56px;
+    padding: 16px;
+}
+
+.button-form-box {
+    height: 48px;
+    background-color: rgb(114, 114, 245);
+    color: #fdfdfd;
+}
+
+.zen-fab-button {
+    position: absolute;
+    bottom: 64px;
+    right: 64px;
+    background-color: rgb(83, 83, 239);
+    border-radius: 24%;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.zen-close-button {
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.grid-message {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.btn-start {
+    margin-left: 16px;
+    margin-top: 38%;
+    height: 60px;
+}
+
+.grid-item {
+    padding: 16px;
+    text-align: center;
+}
+
+.message-right {
+    display: grid;
+    margin-left: 16px;
+    grid-template-columns: 90% auto;
+    padding: 16px;
+    background-color: rgb(219, 219, 255);
+    border-radius: 16px 16px 0 16px;
+    margin-top: 12px;
+}
+
+.message-left {
+    margin-right: 16px;
+    display: grid;
+    grid-template-columns: auto 80%;
+    padding: 16px;
+    background-color: rgb(239, 239, 251);
+    border-radius: 16px 16px 16px 0;
+    margin-top: 12px;
+
+}
+
+.stick-message-box {
+    position: absolute;
+    width: 90%;
+    bottom: 24px;
+    right: inherit;
+}
+
+.message-content {
+    margin-bottom: 84px;
+}
